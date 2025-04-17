@@ -6,6 +6,7 @@ public class MyMinHeap<T extends Comparable<T>> {
 
     public MyMinHeap() {
         heap = new MyArrayList<>();
+
     }
 
     // Insert an element into the heap
@@ -44,6 +45,7 @@ public class MyMinHeap<T extends Comparable<T>> {
             }
             swap(index, parent); // Swap the element with its parent
             index = parent;
+
         }
     }
 

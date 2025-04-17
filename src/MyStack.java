@@ -33,6 +33,7 @@ public class MyStack<T> {
 
     // Checks if the stack is empty
     public boolean isEmpty() {
+
         return list.size() == 0;  // Returns true if the stack is empty
     }
 

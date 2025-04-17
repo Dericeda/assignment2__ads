@@ -11,12 +11,14 @@ public class MyQueue<T> {
     // Adds an element to the end of the queue
     public void enqueue(T item) {
         list.addLast(item); // Add the item to the end of the queue
+
     }
 
     // Removes and returns the first element from the queue
     public T dequeue() {
         if (isEmpty()) {
             throw new NoSuchElementException("Queue is empty"); // Throw exception if the queue is empty
+
         }
         T item = list.getFirst(); // Get the first element from the queue
         list.removeFirst(); // Remove the first element from the queue
@@ -29,6 +31,7 @@ public class MyQueue<T> {
             throw new NoSuchElementException("Queue is empty"); // Throw exception if the queue is empty
         }
         return list.getFirst(); // Return the first element without removing it
+
     }
 
     // Checks if the queue is empty

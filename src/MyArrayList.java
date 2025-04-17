@@ -11,6 +11,7 @@ public class MyArrayList<T> implements MyList<T> {
     public MyArrayList() {
         data = new Object[INITIAL_CAPACITY]; // Initialize the array with initial capacity
         size = 0; // Initially, the list has no elements
+
     }
 
     // Adds an element to the end of the list
@@ -119,6 +120,7 @@ public class MyArrayList<T> implements MyList<T> {
             if (data[i].equals(object)) return i; // Return the index if found
         }
         return -1; // Return -1 if the element is not found
+
     }
 
     // Checks if the specified object exists in the list
@@ -138,6 +140,7 @@ public class MyArrayList<T> implements MyList<T> {
     public void clear() {
         data = new Object[INITIAL_CAPACITY]; // Reset the data array to the initial capacity
         size = 0; // Reset the size to 0
+
     }
 
     // Returns the size of the list
